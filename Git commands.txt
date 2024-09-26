@@ -1,4 +1,7 @@
-git --version 
+git --version   version 2.43.1 ==> major.minor.patch 
+minor : version added with new features 
+major : (~) software need to be updated with the new module
+patch :(^) 
 git init
 pwd as git works with Linux
 ===================================
@@ -8,3 +11,43 @@ git config --global
 user-email:(enter the id)
 ===================================
 git config --list (to view the credentials)
+
+git config --global user.name "vijit verma" 
+git config --global user.email "vijitverma78@gmail.com"
+===================================
+git init 
+default branch master
+ls -al 
+first folder : object 
+second folder: hooks
+third  folders : ref
+forth folders : info   
+and three files 
+===================================
+change the branch 
+git branch -m main
+===================================
+clear 
+===================================
+pwd present working file
+=================================== 
+to make the new file 
+touch index.js index.html
+==================================
+rwx         rwx         rwx 
+root        owner       group
+
+only seen in Linux not in window
+ 
+window : single user
+ubantu : multi user
+ 
+===================================
+git commit -m "some relevant message"
+
+
+
+
+
+
+
