@@ -1,0 +1,10 @@
+git --version 
+git init
+pwd as git works with Linux
+===================================
+git config ( can be of two type local and global environment )
+git config --global 
+git config --global 
+user-email:(enter the id)
+===================================
+git config --list (to view the credentials)
