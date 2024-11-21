@@ -1,0 +1,78 @@
+Es-6 new features 
+1) before it we use var, but now we use let and const 
+2) arrow functions 
+3) async and await / promise 
+4) de-structuring 
+5) default perimeters
+6) spread operators
+7) template literals 
+
+======================================================================
+Data type in js:-
+1. a=12          number     to get the range of it clg(Number.Max_Value) 1.7976931348623157e+308
+   b=12.5        number
+   c=true        Boolean 
+   d="java="     string
+   e             undefined
+   f=Null        null
+   g=12n         bigint 
+                 symbol     added for react library
+======================================================================
+==  compares only value 
+=== compares value and type 
+!== compares value and type
+!=  compares values
+======================================================================
+Functions 
+eg 
+function solve(name){
+console.log("hello"+name);
+}
+we use arrow functions 
+const solve=(name)=>{
+console.log(name)
+}
+in arrow function, it does not have context 
+======================================================================
+how to create a copy of the object
+to clone we use spread operator 
+1. {...object_name}
+2. [...Array_name]
+======================================================================
+
+function add(x,y){
+    return x+y
+}
+const c=add(10);
+console.log(c)
+output : 
+
+
+correction :
+
+function add(x=0,y=0){
+    return x+y
+}
+const c=add();
+console.log(c)
+==============================================================
+
+Promise => resolve reject and pending 
+syntax 
+promise p=new Promise((resolve,reject)=>{
+
+}).then(()=>{
+
+})
+
+=============================================
+
+Asynchronous programming
+
+
+
+
+
+
+
+   
