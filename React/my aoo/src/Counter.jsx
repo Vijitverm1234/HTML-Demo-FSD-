@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 const Counter=()=>{
    const [count, setCount] = useState(0)
@@ -20,7 +20,9 @@ const Counter=()=>{
    const square=()=>{
     setCount(count*count)
    }
-
+  useEffect(()=>{
+     setCount(count)
+  },[count])
     return (
 
         <div className="">
