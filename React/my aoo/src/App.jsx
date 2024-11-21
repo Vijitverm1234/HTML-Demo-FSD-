@@ -2,31 +2,24 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Counter from './Counter'
+import { Routes,Route } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-   const decreaseCount=()=>{
-    setCount(count-1)
-   }
-   const increaseCount=()=>{
-    setCount(count+1)
-   }
-   const reset=()=>{
-    setCount(0)
-   }
   return (
     <>
-     <div className="increase">
-      <p className='para'>{count}</p>
-      <div className='flex'>
-      <button onClick={decreaseCount}>Decrease</button>
-      <button onClick={increaseCount}>Increase</button>
-      <button onClick={reset}>Reset</button>
-
-      </div>
-     </div>
+      <nav>
+        <Link to="/counter" className='nav-link'>Counter</Link>
+        <Link to="/" className='nav-link'>Home</Link>
+      </nav>
+      <Routes>
+        <Route path="/counter" element={<Counter/>} />
+        <Route path="*" element={<h1>No page available</h1>} />
+      </Routes>
     </>
-  )
+  );
 }
+
 
 export default App
