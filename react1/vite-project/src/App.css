@@ -1,0 +1,13 @@
+nav{
+  background-color: gold;
+  border: 1px solid blue;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  list-style: none;
+}
+nav li a{
+text-decoration: none;
+}
