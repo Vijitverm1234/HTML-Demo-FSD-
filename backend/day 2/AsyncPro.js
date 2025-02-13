@@ -1,31 +1,23 @@
 const fs=require("fs/promises");
-function myReadFile(){
+const myReadFile=async()=>{
     try {
-        const data=fs.readFile("dummy.txt",'utf-8')
-        data.then((res)=>{
-            console.log("file data " , res)
-        }).catch((err)=>{
-         throw err;
-        })
+        const data= await fs.readFile("dummy.txt",'utf-8')
+        console.log(data)
     } catch (erreror) {
         console.log("something went wrong")
     }
 }
 
-function mywriteFile(){
+const mywriteFile=async()=>{
     try {
-        fs.writeFile("dummy.txt","FSD Day 2").catch((err)=>{
-         throw err;
-        })
+        await fs.writeFile("dummy.txt","FSD Day 2")
     } catch (err) {
         console.log(err.message)
     }
 }
-function myappendFile(){
+const myappendFile=async()=>{
     try {
-        fs.appendFile("dummy.txt"," FSD Day 2 but appending function").catch((err)=>{
-         throw err;
-        })
+     await fs.appendFile("dummy.txt"," FSD Day 2 but appending function")
     } catch (err) {
         console.log(err.message)
     }
