@@ -44,6 +44,9 @@ app.patch('/product/:id',(req,res)=>{
     Object.assign(user,updates);
     res.status(200).json({msg:"updated successfully"})
 })
+
+
+// ;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, cumque qui enim tenetur aperiam sed quos nostrum facere incidunt fugiat, porro velit quod eveniet omnis autem, quo quibusdam itaque ab.
 app.delete('/product/:id',(req,res)=>{
     const userId=parseInt(req.params.id);
     const index=products.findIndex((user)=>user.id===userId)
