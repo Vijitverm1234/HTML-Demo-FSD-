@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.mainform{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+    border:1px solid black;
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+    width: max-content;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+    box-shadow: 10px 10px 8px #888888;
+    font-family: outfit;
+    overflow: hidden;
+}
+.main-heading{
+    font-family: outfit;
+    font-size: xx-large;
+}
+.form-items{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #121a27;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: outfit;
+    cursor: pointer;
+}
+input{
+    border: 1px solid gray;
+    padding: 5px 20px;
+    border-radius: 20px;
+
+}
+.form-img{
+    max-width: 200px;
+    max-height: 200px;
+  
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: -105px;
+    right: 20px;
+    left: -15px;
+    z-index: -1;
+}
